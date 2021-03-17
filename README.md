@@ -31,3 +31,11 @@ T-test summary and findings
 
 
 ## Study Design: MechaCar vs. Competition
+Description of statistical study that can quantify how MechaCar performs against the competition.  Use metrics that would be of interest to the consumer, such as highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+Address the following in the description:
+- What metrics will be tested
+- What is the null hypothesis or alternative hypothesis
+- What statistical test will be used to test this hypothesis and why
+- What data is needed run the statistical test
+
