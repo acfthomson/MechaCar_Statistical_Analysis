@@ -50,7 +50,16 @@ The variance for suspension coils in Lot 3 was 170.28, which exceeds MechaCar de
 
 
 ## T-Tests on Suspension Coils
-T-test summary and findings
+A one-sample t-test was used to determine if PSI across all manufacturing lots was statistically different from the population mean of 1500 PSI.  In order to use the t-test, a determination on whether the suspension coil dataset was skewed needed to be made.
+
+Using ggplot and visualizing the distribution with a density plot, it was found that the suspension coil dataset was slightly right-skewed.
+
+![Deliverable 2_DensityPlot](https://user-images.githubusercontent.com/73897240/111689655-ae44f900-8802-11eb-9614-1eabadc5ac0f.png)
+
+
+
+
+
 
 
 ## Study Design: MechaCar vs. Competition
