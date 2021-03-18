@@ -36,11 +36,30 @@ The data analytics team provided the following:
 
 
 ## Summary Statistics on Suspension Coils
-Design specifications for MechaCar suspension coils dictates the variance of the suspension coils must not exceed 100 pounds per square inch (PSI).  The mean and median values for Lots 1 and 2 are very close and are within design specifications.  Lot 3 had the most variance and exceeded manufacturer specifications.
+Design specifications for MechaCar suspension coils dictates the variance of the suspension coils must not exceed 100 pounds per square inch (PSI).
+
+The variance of the suspension coils for all three lots was 62.29.  This is within MechaCar design specifications.
+
+![Deliverable_2_TotalSum](https://user-images.githubusercontent.com/73897240/111684819-91f28d80-87fd-11eb-8ef9-fdac277f5e79.PNG)
+
+When examining the PSI of suspension coils in Lots 1, 2, and 3 individually, analysis indicated that the variance in Lots 1 and 2 are below 100 PSI, so suspension coils in Lots 1 and 2 are within MechaCar design specifications.
+
+The variance for suspension coils in Lot 3 was 170.28, which exceeds MechaCar design specifications.
+
+![Deliverable_2_LotSum](https://user-images.githubusercontent.com/73897240/111684910-adf62f00-87fd-11eb-83ae-61fa9cbc2a20.PNG)
 
 
 ## T-Tests on Suspension Coils
-T-test summary and findings
+A one-sample t-test was used to determine if PSI across all manufacturing lots was statistically different from the population mean of 1500 PSI.  In order to use the t-test, a determination on whether the suspension coil dataset was skewed needed to be made.
+
+Using ggplot and visualizing the distribution with a density plot, it was found that the suspension coil dataset was slightly right-skewed.
+
+![Deliverable 2_DensityPlot](https://user-images.githubusercontent.com/73897240/111689655-ae44f900-8802-11eb-9614-1eabadc5ac0f.png)
+
+
+
+
+
 
 
 ## Study Design: MechaCar vs. Competition
