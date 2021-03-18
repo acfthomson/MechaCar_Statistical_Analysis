@@ -33,11 +33,14 @@ Suspension_Coil <- read.csv('Suspension_Coil.csv', check.names = F, stringsAsFac
 total_summary <- Suspension_Coil %>% summarize(Mean=mean(PSI), 
                                                Median=median(PSI), 
                                                Variance=var(PSI), 
-                                               SD=sd(PSI))
+                                               SD=sd(PSI), 
+                                               .groups = 'keep')
 
 
-#create a lot summary
-lot_demo <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=(PSI),Variance=var(PSI),SD=sd(PSI))
+# Use groupby() and summarize() to create a lot_summary dataframe
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarise(
+  Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), 
+  .groups = 'keep')
 
 
 # -------------------- Deliverable 3 --------------------
