@@ -56,7 +56,7 @@ plt + geom_density()
 
 
 # T-test for all manufacturing lots
-t.test(log10(sample_coils$PSI), mu = mean(log10(Suspension_Coil$PSI)))
+t.test(Suspension_Coil$PSI, mu = 1500)
 
 
 # Use t.test() to determine if PSI across all mfg lots is statistically 
