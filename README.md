@@ -50,16 +50,33 @@ The variance for suspension coils in Lot 3 was 170.28, which exceeds MechaCar de
 
 
 ## T-Tests on Suspension Coils
-A one-sample t-test was used to determine if PSI across all manufacturing lots was statistically different from the population mean of 1500 PSI.  In order to use the t-test, a determination on whether the suspension coil dataset was skewed needed to be made.
+A one-sample t-test was used to determine whether or not if PSI across all manufacturing lots was statistically different from the population mean of 1500 PSI.  
 
-Using ggplot and visualizing the distribution with a density plot, it was found that the suspension coil dataset was slightly right-skewed.
+The distribution of the suspension coil dataset was visualized with a density plot, which showed that the suspension coil dataset was nearly evenly distributed.
 
 ![Deliverable 2_DensityPlot](https://user-images.githubusercontent.com/73897240/111689655-ae44f900-8802-11eb-9614-1eabadc5ac0f.png)
 
 
+For all t-tests conducted, the significance level was 0.05 percent.  The t-test compared the means of the Suspension Coil dataset, which was 1498.78, against a mean of 1500.  All t-tests conducted resulted in the means being statistically similar.
+
+A t-test across all suspension coil manufacturing lots gave a p-value of 0.06  Since this is above the significance level, the two means are statistically similar.
+
+![Deliverable_3_All_T-test](https://user-images.githubusercontent.com/73897240/111695403-72616200-8809-11eb-84fd-b6f08ff35548.PNG)
 
 
+A t-test for Lot 1 gave a p-value of 1, which is above the significance level.  The two means are statistically similar.
 
+![Deliverable_3_Lot1_T-test](https://user-images.githubusercontent.com/73897240/111695910-fca9c600-8809-11eb-99cf-86e11bffea76.PNG)
+
+
+The p-value for the Lot 2 t-test was 0.6072.  This is above the significance level of 0.05 results in the two means being statistically similar.
+
+![Deliverable_3_Lot2_T-test](https://user-images.githubusercontent.com/73897240/111696909-4050ff80-880b-11eb-98d8-ca50bad8b0b6.PNG)
+
+
+The calculated p-value from the Lot 3 t-test was 0.4168.  This is above the 0.05 significance level and results in the means being statistically similar.
+
+![Deliverable_3_Lot3_T-test](https://user-images.githubusercontent.com/73897240/111697229-b0f81c00-880b-11eb-9a3a-39b20d47cdc9.PNG)
 
 
 ## Study Design: MechaCar vs. Competition
