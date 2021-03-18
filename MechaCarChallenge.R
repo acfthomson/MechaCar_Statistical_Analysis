@@ -44,15 +44,25 @@ lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarise(
 
 
 # -------------------- Deliverable 3 --------------------
-# Use t.test() to determine if PSI across all mfg lots is statistically 
+# Use t.test() to determine if PSI across all mfg lots is statistically
 # different from population mean of 1500 PSI
-t.test(Suspension_Coil$PSI, mu = 1500)
+# Determine if data is skewed
+# Import dataset into ggplot
+plt <- ggplot(Suspension_Coil, aes(x=log10(PSI)))
+
+
+# Visualize distribution of dataset using a density plot
+plt + geom_density()
+
+
+# T-test for all manufacturing lots
+t.test(log10(sample_coils$PSI), mu = mean(log10(Suspension_Coil$PSI)))
 
 
 # Use t.test() to determine if PSI across all mfg lots is statistically 
 # different across each mfg lot
 # Lot 1
-t.test(subset(Suspension_Coil,Manufacturing_Lot == "Lot1")$PSI, mu = 1500)
+t.test(subset(Suspension_Coil, Manufacturing_Lot == "Lot1")$PSI, mu = 1500)
 
 
 # Lot 2
