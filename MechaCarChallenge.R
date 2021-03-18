@@ -61,3 +61,6 @@ t.test(subset(Suspension_Coil,Manufacturing_Lot == "Lot2")$PSI, mu = 1500)
 
 # Lot 3
 t.test(subset(Suspension_Coil,Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
+
+
+# Amanda Thomson
